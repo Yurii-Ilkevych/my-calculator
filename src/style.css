@@ -1,33 +1,56 @@
-.box-figure{
-    display: flex;
-    flex-wrap: wrap;
+p{
+    margin: 0;
+    margin-bottom: 25px;
 }
+
 
 .container{
 
 }
 /* 3. Mobile Container */
-@media screen and (max-width: 1023px){
+/* @media screen and (max-width: 1023px){
     .container {
         min-width: 320px;
         max-width: 414px;  
         padding-left: 15px;
         padding-right: 15px;
-        /* width: 414px; */
-    }}
+     }} */
 
 
 /* 4. Tablet Container */
-@media screen and (min-width: 1024px) and (max-width: 1279px){
+/* @media screen and (min-width: 1024px) and (max-width: 1279px){
 .container {
     min-width: 1024px;
     max-width: 1024px;
     width: 1024px;
     padding-left: 47px;
     padding-right: 47px;  
-}}
+}} */
 
+body{
+    color: white;
+}
 
+button {
+    padding: 5;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: black;
+    cursor: pointer;
+    width: 45px;
+    border-radius: 5px;
+  }
+
+  button:active {
+    background-color: #4d515e;
+    transform: translateY(1px);
+  }
+  button:disabled {
+    background: #999;
+    color: #555;
+    cursor: not-allowed;
+  }
 
 /* 5. Desktop Container */
 @media screen and (min-width: 1280px) {
@@ -38,3 +61,53 @@
         padding-left: 85px;
         padding-right: 85px;  
     }}
+
+    .wrapper-calculator-app{
+        width: 260px;
+        height: 282px;
+        position: relative;
+    }
+
+    .input-calc{
+        display: block;
+        text-align: center;
+        /* margin-bottom: 25px; */
+        width: 192px;
+        height: 18px;
+
+        border: solid 1px rgb(0, 0, 0);
+    }
+    .box-figure{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 4px;
+        row-gap: 4px;
+        position: relative;
+        top: 25px;
+    }
+    .tittle{
+        color: black;
+        margin-bottom: 10px;
+    }
+    .increment{
+        height: 61;
+        z-index: 2;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+
+    .show{
+        color: black;
+        margin: 0;
+        padding: 0;
+    }
+    .btn-none{
+        background-color: white;
+        color: white;
+    }
+
+    .input-flex{
+        display: flex;
+        flex-wrap: wrap;
+    }
