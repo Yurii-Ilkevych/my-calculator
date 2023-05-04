@@ -111,3 +111,17 @@ button {
         display: flex;
         flex-wrap: wrap;
     }
+    .is-hidden{
+        display: none;
+    }
+    .input-memory{
+        position: absolute;
+        top: 57px;
+        left: 0;
+        border: solid 1px rgb(0, 0, 0);
+        width: 192px;
+        height: 18px;
+        color: black;
+    }
+
+    .show-two{}
